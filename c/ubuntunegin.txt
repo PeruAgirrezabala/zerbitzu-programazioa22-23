@@ -1,0 +1,42 @@
+#include <stdio.h>
+
+int main(int argc, char[] *argv)[
+	printf("kaixo mundua\n");
+
+	return 0;
+]
+
+
+
+ggc kaixomundua.c -o kaixomundua.exe
+./kaixomundua.exe
+
+
+#include <stdio.h>
+
+int main(int argc, char[] *argv)[
+	int zenb;
+	printf("sartu zenbaki bat");
+	scanf("%i",&zenb);
+	printf("Zuk sartutako zenbakia hurrengoa da: %i",zenb);
+	printf("Zuk sartutako zenbakia hemen dago gordeta: %p\n",&zenb);
+
+	return 0;
+]
+
+
+
+int main(int argc, char[] *argv)[
+	int zenb;
+	int *punteroa;
+	printf("sartu zenbaki bat");
+	scanf("%i",&zenb);
+	printf("Zuk sartutako zenbakia hurrengoa da: %i",zenb);
+	printf("Zuk sartutako zenbakia hemen dago gordeta: %p\n",&zenb);
+	punteroa = &zenb;
+	*punteroa=7;
+	printf("Zuk sartutako zenbakia hurrengoa da: %i ", zenb);
+	
+
+	return 0;
+]
